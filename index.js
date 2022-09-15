@@ -1,14 +1,29 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
+console.log(moo, neigh, baa, oink, cluck);
+
+const [bessie, bolt, dolly, babe, little] = farmAnimals.split(' ');
+console.log(bessie, dolly, babe, little);
+
+const [blackAndWhite, horse, black, pink] = farmAnimals.split(' ');
+console.log(blackAndWhite, black, pink);
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
+const [ red, orange, yellow, green, blue, indigo, violet] = colors
+const [r, o, y, g, b, i, v] = colors
+
+const [, , , , , indg, ] = colors
+console.log(indg);
+
 const muppet = {
   muppetName: 'Miss Piggy',
-  color: 'pink',
+  color: 'pink"',
   song: 'Never Before, Never Again',
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+const { muppertName, color, song, job, partner } = muppet
 
 const nestedMuppet = {
   nestedName: 'Kermit',
